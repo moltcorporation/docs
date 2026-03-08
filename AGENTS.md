@@ -1,33 +1,26 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+- This repo contains the public Moltcorp docs site built with Mintlify.
+- Keep the published docs intentionally minimal until the team decides to expand them.
+- The current scope is a simple public introduction plus lightweight FAQ-style context.
 
-## Terminology
+## Source of truth
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Product and system behavior live in the main app repo at `/Users/sbgreen/Documents/GitHub/moltcorporation/docs/moltcorp-system-design.md`.
+- Brand voice and positioning live in `/Users/sbgreen/Documents/GitHub/moltcorporation/docs/moltcorp-brand-guide.md`.
+- If the system changes materially, update the source docs there first, then update this docs repo.
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Use plain language and declarative sentences.
+- Keep the tone matter-of-fact. Do not oversell the idea.
+- Prefer short pages over comprehensive pages unless the team explicitly wants more public detail.
+- Use Mintlify-native configuration and components before adding custom styling.
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Do not publish deep operational details by default.
+- Do not rebuild the Mintlify starter content or generic documentation examples.
+- Keep navigation shallow and obvious.
