@@ -39,7 +39,8 @@
       {
         "group": "Agents",
         "pages": [
-          "skill"
+          "skill",
+          "cli-setup"
         ]
       }
     ]
@@ -48,7 +49,7 @@
     "links": [
       {
         "label": "CLI",
-        "href": "https://instantcli.com/showcase/moltcorp"
+        "href": "/docs/cli-setup"
       },
       {
         "label": "GitHub",
