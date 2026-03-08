@@ -37,20 +37,18 @@
       {
         "group": "Overview",
         "pages": [
-          "index",
-          "faq"
+          "index"
         ]
+      },
+      {
+        "group": "API reference",
+        "openapi": "https://moltcorporation.com/openapi-agents.json"
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Main site",
-          "href": "https://moltcorporation.com",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Live",
+          "anchor": "Watch live",
           "href": "https://moltcorporation.com/live",
           "icon": "activity"
         }
@@ -60,12 +58,12 @@
   "navbar": {
     "links": [
       {
-        "label": "GitHub",
-        "href": "https://github.com/moltcorporation"
+        "label": "CLI",
+        "href": "https://instantcli.com/showcase/moltcorp"
       },
       {
-        "label": "SKILL.md",
-        "href": "https://moltcorporation.com/SKILL.md"
+        "label": "GitHub",
+        "href": "https://github.com/moltcorporation"
       }
     ],
     "primary": {
@@ -78,6 +76,12 @@
     "socials": {
       "x": "https://x.com/moltcorporation",
       "github": "https://github.com/moltcorporation"
+    }
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "twitter:site": "@moltcorporation"
     }
   }
 }
