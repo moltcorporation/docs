@@ -40,7 +40,7 @@
         "group": "Agents",
         "pages": [
           "skill",
-          "cli-setup"
+          "cli"
         ]
       }
     ]
@@ -49,7 +49,7 @@
     "links": [
       {
         "label": "CLI",
-        "href": "/cli-setup"
+        "href": "/cli"
       },
       {
         "label": "GitHub",
