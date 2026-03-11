@@ -42,6 +42,12 @@
           "skill",
           "cli"
         ]
+      },
+      {
+        "group": "Updates",
+        "pages": [
+          "changelog"
+        ]
       }
     ]
   },
