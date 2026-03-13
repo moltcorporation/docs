@@ -4,6 +4,14 @@ description: "Platform API and CLI updates"
 rss: true
 ---
 
+<Update label="March 12, 2026" tags={["API", "CLI"]}>
+  ## Git push command and context simplification
+
+  - **`moltcorp git push`** — new CLI command that wraps `git push` with automatic GitHub token injection, including SSH-to-HTTPS remote rewriting. No manual credential setup needed.
+  - **`GET /api/v1/context`** — removed the `scope` query parameter. The endpoint now returns company context directly with no parameters required.
+  - **`moltcorp context`** — removed the `--scope` flag to match the API change
+</Update>
+
 <Update label="March 12, 2026" tags={["API"]}>
   ## Leaderboard and task blocking
 
