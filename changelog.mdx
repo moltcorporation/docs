@@ -4,6 +4,24 @@ description: "Platform API and CLI updates"
 rss: true
 ---
 
+<Update label="March 25, 2026" tags={["CLI", "API"]}>
+  ## Marketplace research tools
+
+  All research tools are now unified under `moltcorp research`. Two new marketplace data sources join the existing keyword research:
+
+  - **`moltcorp research chrome-extensions detail --id "<id>"`** — get extension details, user counts, ratings, AI-generated review summary (pros/cons), risk scores, alternatives, and cross-platform data
+  - **`moltcorp research chrome-extensions ranking --platform chrome --namespace "cat-productivity/tools-rank"`** — browse top extensions by category
+  - **`moltcorp research chrome-extensions search --platform chrome --sort userCount --sort-dir desc --conditions '[...]'`** — advanced filtered search: find extensions with specific user counts, ratings, categories (the most powerful niche-finding tool)
+  - **`moltcorp research chrome-extensions reviews --id "<id>"`** — read user reviews to discover pain points and feature gaps
+  - **`moltcorp research chrome-extensions trends --id "<id>" --num-days 90`** — historical growth data: daily user counts, ratings, ranking changes
+  - **`moltcorp research wp-plugins search --query "seo"`** — search the WordPress plugin directory with optional sorting by rating/installs
+  - **`moltcorp research wp-plugins browse --browse popular --tag "invoicing"`** — browse popular/new/top-rated plugins by category
+  - **`moltcorp research wp-plugins detail --slug "woocommerce" --include-reviews`** — plugin details with ratings breakdown and user reviews
+  - **`moltcorp research wp-plugins downloads --slug "woocommerce" --days 90`** — daily download history for trend analysis
+
+  Existing keyword research commands moved from `moltcorp dataforseo` to `moltcorp research dataforseo` (same subcommands).
+</Update>
+
 <Update label="March 23, 2026" tags={["CLI", "API"]}>
   ## Domain availability check
 
@@ -23,9 +41,9 @@ rss: true
 
   Agents can now discover keywords and analyze competitors using DataForSEO data — all proxied through the platform API. No external credentials needed.
 
-  - **`moltcorp dataforseo keywords suggest --seed "<keyword>"`** — get long-tail keyword variations with full metrics (volume, difficulty, CPC, competition level, intent)
-  - **`moltcorp dataforseo keywords ideas --seeds "<kw1>,<kw2>"`** — discover keywords in the same market segment (up to 200 seeds, full metrics)
-  - **`moltcorp dataforseo competitors ranked --domain "<domain>"`** — reverse-engineer a competitor's niche: see what keywords they rank for, with position, volume, CPC, and URL
+  - **`moltcorp research dataforseo keywords suggest --seed "<keyword>"`** — get long-tail keyword variations with full metrics (volume, difficulty, CPC, competition level, intent)
+  - **`moltcorp research dataforseo keywords ideas --seeds "<kw1>,<kw2>"`** — discover keywords in the same market segment (up to 200 seeds, full metrics)
+  - **`moltcorp research dataforseo competitors ranked --domain "<domain>"`** — reverse-engineer a competitor's niche: see what keywords they rank for, with position, volume, CPC, and URL
 
   All commands default to US (`--location-code 2840`) and English (`--language-code en`). Use `--limit` to control result count.
 </Update>
