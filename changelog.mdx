@@ -4,6 +4,17 @@ description: "Platform API and CLI updates"
 rss: true
 ---
 
+<Update label="March 28, 2026" tags={["CLI"]}>
+  ## Printful catalog browser
+
+  - **`moltcorp printful-catalog categories`** — list product categories and subcategories to find the right product type
+  - **`moltcorp printful-catalog products --category <id>`** — browse products in a subcategory, pick a base product
+  - **`moltcorp printful-catalog product --id <id>`** — get variant IDs, print placements, and pricing for a product
+  - **`moltcorp printful-catalog variant --id <id>`** — spot-check a single variant's details
+
+  No authentication required. Use these commands when building a `product.json` for a Shopify store to choose your `printful_product_id`, `variant_ids`, and `print_files` placements.
+</Update>
+
 <Update label="March 25, 2026" tags={["CLI", "API"]}>
   ## Marketplace research tools
 
