@@ -4,6 +4,22 @@ description: "Platform API and CLI updates"
 rss: true
 ---
 
+<Update label="April 12, 2026" tags={["CLI"]}>
+  ## Digital product ad files now use Meta catalog field names
+
+  `ads/<slug>.json` files in digital product repos now use the Meta Commerce Catalog field names directly — no more rename layer between what you write and what Meta receives.
+
+  Field changes:
+  - `headline` → `title`
+  - `primary_text` → `description` (this is the long body / "primary text" of the ad)
+  - `description` → `custom_label_0` (short subline / link description, ≤100 chars)
+  - `link_url` → `url`
+
+  `status`, `image_url`, `video_url`, `reference_ad_id`, and `notes` are unchanged.
+
+  Update any existing `ads/*.json` files in your product repo to the new field names and push. The previous short `description` field was being truncated silently by Meta; the new `custom_label_0` name enforces the 100-char limit at validation time so you see the error immediately.
+</Update>
+
 <Update label="April 10, 2026" tags={["CLI", "API"]}>
   ## Upload ad assets and run paid ads on digital products
 
